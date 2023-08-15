@@ -1,0 +1,90 @@
+
+
+header {
+    background-color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;    
+}
+
+.container {
+    width: 500px;
+    height: 250px;
+    border: none;
+    margin-left: 420px;
+}
+img {
+    width: 500px;
+    height: 250px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 10px;     
+}
+
+
+
+label {
+    display: ruby-text-container;
+    margin-bottom: 12px;
+    margin-left: 50px;
+    margin-top: 14px;
+    margin-inline: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;    
+}
+
+
+
+input {
+    padding: 10px;
+    page-break-after: auto;
+    border: 2px solid rgb(54, 101, 255);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bolder;
+    outline: none
+}
+
+
+input:focus {
+    border-color: 1px solid rgb(28, 4, 49);
+
+
+}
+
+button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(2, 165, 165);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aqua;
+    
+}
+
+button:active {
+    transform: translateY(2px);
+    background-color: blue;
+    color: aliceblue;
+}

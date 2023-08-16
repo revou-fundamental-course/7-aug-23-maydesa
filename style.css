@@ -23,13 +23,13 @@ img {
 }
 
 .input-section {
-    display: flex;
+    display: ruby-base-container;
     flex-direction: row;
     margin-left: 100px;
     margin-right: 100px;
-    padding-top: 10px;     
+    padding-top: 10px;
+    ruby-align: right;     
 }
-
 
 
 label {
@@ -37,7 +37,7 @@ label {
     margin-bottom: 12px;
     margin-left: 50px;
     margin-top: 14px;
-    margin-inline: 40px;
+    margin-inline: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
     font-weight: bold;
@@ -57,11 +57,13 @@ input {
 }
 
 
+
 input:focus {
     border-color: 1px solid rgb(28, 4, 49);
 
 
 }
+
 
 button {
     padding-left: 20px;
@@ -69,14 +71,17 @@ button {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
     border: none;
     background-color: rgb(2, 165, 165);
+    color : red;
     cursor: pointer;
 }
+
 
 button:hover {
     background-color: aqua;
@@ -84,7 +89,8 @@ button:hover {
 }
 
 button:active {
-    transform: translateY(2px);
+    transform: translateY(4px);
     background-color: blue;
     color: aliceblue;
 }
+

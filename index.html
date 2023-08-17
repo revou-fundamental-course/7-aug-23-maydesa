@@ -9,67 +9,59 @@
 
 <body>
     <header>
-        
         <h1>Kalkulator Segitiga Sama Kaki</h1>
     </header>
     
     <div class="container">
-        <img src= "https://1.bp.blogspot.com/-XCmHbZhBabk/X_FMiNcQoKI/AAAAAAAACo4/IP9FVeulvosTJUYoOcktA4L5LlKwJGpCgCLcBGAsYHQ/s2048/rumus%2Bsegitiga%2Bsama%2Bkaki.png" alt= "Rumus Luas Keliling Tinggi Dan Alas Segitiga Beserta Contohnya Bachtiarmath Com" sizes="100px 75px"></img>
+        <img src="https://1.bp.blogspot.com/-XCmHbZhBabk/X_FMiNcQoKI/AAAAAAAACo4/IP9FVeulvosTJUYoOcktA4L5LlKwJGpCgCLcBGAsYHQ/s2048/rumus%2Bsegitiga%2Bsama%2Bkaki.png" alt="Rumus Luas Keliling Tinggi Dan Alas Segitiga Beserta Contohnya Bachtiarmath Com" sizes="100px 75px">
     </div>
         
     <header>
-        <h2>Luas Segitiga</h2>
+        <h3>Luas Segitiga</h3>
     </header>
 
-
     <main>
-
         <section class="input-section">
             <section>
-                <label for="tinggi-input">Tinggi Segitiga</label>
-                <input type="number" id="tinggi-input" placeholder="0">
+                <label for="tinggi-input">Tinggi Segitiga (t)</label>
+                <input type="number" id="tinggi-input-luas" placeholder="0">
                 
-                <label for="alas-input">Alas Segitiga</label>
-                <input type="number" id="alas-input" placeholder="0">
+                <label for="alas-input-luas">Alas Segitiga (a)</label>
+                <input type="number" id="alas-input-luas" placeholder="0">
                 
                 <button id="hitung-luas">Hitung</button>
             </section>
             
             <section>
-                <label for="hasil-output">LUAS Segitiga</label>
-                <input type="number" id="hasil-output" placeholder="0">
-                <button id="reset">Reset</button>
+                <label for="hasil-output-luas">LUAS SEGITIGA ( 1/2 x a x t)</label>
+                <input type="number" id="hasil-output-luas" placeholder="0" disabled>
                 
             </section>
-            
         </section>
 
         <header>
-            <h2>Keliling Segitiga</h2>
+            <h3>Keliling Segitiga</h3>
         </header>
 
         <section class="input-section">
-            <label for="sisi-input">Sisi Segitiga</label>
-            <input type="number" id="sisi-input" placeholder="0">
-
-            <label for="alas-input">Alas Segitiga</label>
-            <input type="number" id="alas-input" placeholder="0">
-            
-            <button id="hitung-keliling">Hitung</button>
-
             <section>
-                <label for="hasil-output">KELILING Segitiga</label>
-                <input type="number" id="hasil-output" placeholder="0">
-                <button>Reset</button>
+                <label for="sisi-input">Sisi Segitiga (b)</label>
+                <input type="number" id="sisi-input-keliling" placeholder="0">
                 
+                <label for="alas-input-keliling">Alas Segitiga (a)</label>
+                <input type="number" id="alas-input-keliling" placeholder="0">
+                
+                <button id="hitung-keliling">Hitung</button>
             </section>
             
+            <section>
+                <label for="hasil-output-keliling">KELILING SEGITIGA ( a + 2b )</label>
+                <input type="number" id="hasil-output-keliling" placeholder="0" disabled>
+                
+            </section>
         </section>
-
     </main>
-    <script src="JS/script.js">
-    
-    </script>
-    
+
+    <script src="js/script.js"></script>
 </body>
 </html>

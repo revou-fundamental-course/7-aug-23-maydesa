@@ -1,38 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const hitungLuasButton = document.getElementById("hitung-luas");
-    const hasilLuasOutput = document.getElementById("hasil-output-luas");
-    const resetLuasButton = document.getElementById("reset-luas");
+  // Menghitung luas segitiga
+  const hitungLuasButton = document.getElementById("hitung-luas");
+  const hasilOutputLuas = document.getElementById("hasil-output-luas");
 
-    hitungLuasButton.addEventListener("click", function () {
-        const tinggi = parseFloat(document.getElementById("tinggi-input").value);
-        const alas = parseFloat(document.getElementById("alas-input-luas").value);
-        const luas = (alas * tinggi) / 2;
-        hasilLuasOutput.value = luas.toFixed(2);
-    });
+  hitungLuasButton.addEventListener("click", function () {
+    const tinggi = parseFloat(document.getElementById("tinggi-input-luas").value);
+    const alas = parseFloat(document.getElementById("alas-input-luas").value);
 
-    resetLuasButton.addEventListener("click", function () {
-        document.getElementById("tinggi-input").value = "";
-        document.getElementById("alas-input-luas").value = "";
-        hasilLuasOutput.value = "";
-    });
+    const luas = (alas * tinggi) / 2;
+    hasilOutputLuas.value = luas;
 
+    console.log("Luas Segitiga: " + luas);
+  });
 
-    
+  // Menghitung keliling segitiga
+  const hitungKelilingButton = document.getElementById("hitung-keliling");
+  const hasilOutputKeliling = document.getElementById("hasil-output-keliling");
 
-    const hitungKelilingButton = document.getElementById("hitung-keliling");
-    const hasilKelilingOutput = document.getElementById("hasil-output-keliling");
-    const resetKelilingButton = document.getElementById("reset-keliling");
+  hitungKelilingButton.addEventListener("click", function () {
+    const sisi = parseFloat(document.getElementById("sisi-input-keliling").value);
+    const alasKeliling = parseFloat(document.getElementById("alas-input-keliling").value);
 
-    hitungKelilingButton.addEventListener("click", function () {
-        const sisi = parseFloat(document.getElementById("sisi-input-keliling").value);
-        const alas = parseFloat(document.getElementById("alas-input-keliling").value);
-        const keliling = alas + 2 * sisi;
-        hasilKelilingOutput.value = keliling.toFixed(2);
-    });
+    const keliling = alasKeliling + ( 2 * sisi );
+    hasilOutputKeliling.value = keliling;
 
-    resetKelilingButton.addEventListener("click", function () {
-        document.getElementById("sisi-input-keliling").value = "";
-        document.getElementById("alas-input-keliling").value = "";
-        hasilKelilingOutput.value = "";
-    });
+    console.log("Keliling Segitiga: " + keliling);
+  });
 });

@@ -11,6 +11,7 @@ header {
     border-radius: 10px;    
 }
 
+
 .container {
     width: 500px;
     height: 250px;
@@ -23,23 +24,24 @@ img {
 }
 
 .input-section {
-    display: ruby-base-container;
-    flex-direction: row;
-    margin-left: 100px;
+    display: ruby;
+    flex-direction: column;
+    margin-left: 200px;
     margin-right: 100px;
     padding-top: 10px;
-    ruby-align: right;     
+    padding-bottom: 4px;
+    ruby-align: center;     
 }
 
 
 label {
-    display: ruby-text-container;
+    display: ruby;
     margin-bottom: 12px;
     margin-left: 50px;
     margin-top: 14px;
     margin-inline: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
     font-weight: bold;
     color: blue;    
 }

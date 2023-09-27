@@ -2,4 +2,3 @@
 
 Tugas RevoU Fundamental Software Engineering Course 
 EKA MAYDESA
-email : mediawarnabatam@gmail.com
